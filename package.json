@@ -1,0 +1,7 @@
+{
+  "name" : "moovatom",
+  "version" : "0.0.1",
+  "dependencies": {
+    "pineapple" : ">=0.1.x"
+  }
+}

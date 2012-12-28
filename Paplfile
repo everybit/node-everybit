@@ -1,0 +1,9 @@
+require('./lib/moovatom/moovatom');
+
+moovatom.user.auth('apikey');
+
+moovatom.user.details('a6d9eb7f-f77d-4e35-9016-79410de4acc9', function(err, user) {
+  console.log(user)
+})
+
+module.exports = moovatom;

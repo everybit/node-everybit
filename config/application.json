@@ -1,0 +1,7 @@
+{
+  "name"    : "moovatom",
+  "apikey"  : "93c632ec0136dbf13ae3c6f640d748c502b30f15324354897dcf713c",
+  "client"  : {
+    "url" : "http://127.0.0.1:4000"
+  }
+}
