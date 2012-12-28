@@ -1,9 +1,19 @@
 require('./lib/moovatom/moovatom');
 
-moovatom.user.auth('apikey');
+var user = new moovatom.User('75e20a0c-8150-4ad2-b680-4b327c7eb94a')
 
-moovatom.user.details('a6d9eb7f-f77d-4e35-9016-79410de4acc9', function(err, user) {
-  console.log(user)
+user.client.auth('apikey');
+
+user.details(function(err, user) {
+  if (err) {
+    return pineapple.app.logger.error(err.message);
+  }
+
+  pineapple.app.logger.info('-----------------User----------------------')
+  pineapple.app.logger.debug('  user.username            =>  ' + user.username.yellow)
+  pineapple.app.logger.debug('  user.profile.first_name  =>  ' + user.profile.first_name.yellow)
+  pineapple.app.logger.debug('  user.profile.last_name   =>  ' + user.profile.last_name.yellow)
+  pineapple.app.logger.info('-------------------------------------------')
 })
 
 module.exports = moovatom;
