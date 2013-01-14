@@ -4,7 +4,7 @@
   "server" : {
     "adapter"  : "restify",
     "config"   : {
-      "name"      : "moovatom",
+      "name"      : "everybit",
       "version"   : "1.0.0"
     }  
   }

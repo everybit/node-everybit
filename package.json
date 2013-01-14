@@ -1,6 +1,6 @@
 {
-  "name" : "moovatom",
-  "version" : "0.0.1",
+  "name" : "everybit",
+  "version" : "0.0.2",
   "dependencies": {
     "pineapple" : ">=0.2.x"
   }

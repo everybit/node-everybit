@@ -1,6 +1,6 @@
-require('./lib/moovatom/moovatom');
+require('./lib/everybit/everybit');
 
-var user = new moovatom.User('75e20a0c-8150-4ad2-b680-4b327c7eb94a')
+var user = new everybit.User('75e20a0c-8150-4ad2-b680-4b327c7eb94a')
 
 user.client.auth('apikey');
 
@@ -16,4 +16,4 @@ user.details(function(err, user) {
   pineapple.app.logger.info('-------------------------------------------')
 })
 
-module.exports = moovatom;
+module.exports = everybit;
