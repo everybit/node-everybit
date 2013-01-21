@@ -1,6 +1,6 @@
 require('./lib/everybit/everybit');
 
-var user = new everybit.User('75e20a0c-8150-4ad2-b680-4b327c7eb94a')
+var user = new everybit.User('831d1321-eaf0-4270-be64-e4aee4ff285e')
 
 user.client.auth('apikey');
 
@@ -8,6 +8,8 @@ user.details(function(err, user) {
   if (err) {
     return pineapple.app.logger.error(err.message);
   }
+
+  console.log(user)
 
   pineapple.app.logger.info('-----------------User----------------------')
   pineapple.app.logger.debug('  user.username            =>  ' + user.username.yellow)
