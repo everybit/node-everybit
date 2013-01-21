@@ -1,6 +1,7 @@
 {
   "name"    : "everybit",
   "apikey"  : "93c632ec0136dbf13ae3c6f640d748c502b30f15324354897dcf713c",
+  "type"    : "client",
   "client"  : {
     "url" : "http://localhost:4000"
   }
