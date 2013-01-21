@@ -1,21 +1,17 @@
 require('./lib/everybit/everybit');
 
-var user = new everybit.User('831d1321-eaf0-4270-be64-e4aee4ff285e')
+Everybit.setApiKey('ed19b29410b801f2c7d2e7ff49802a6e734987fbce5b7a024c73652a');
 
-user.client.auth('apikey');
-
-user.details(function(err, user) {
+Everybit.Account.retrieve(function(err, account) {
   if (err) {
     return pineapple.app.logger.error(err.message);
   }
 
-  console.log(user)
-
-  pineapple.app.logger.info('-----------------User----------------------')
-  pineapple.app.logger.debug('  user.username            =>  ' + user.username.yellow)
-  pineapple.app.logger.debug('  user.profile.first_name  =>  ' + user.profile.first_name.yellow)
-  pineapple.app.logger.debug('  user.profile.last_name   =>  ' + user.profile.last_name.yellow)
+  pineapple.app.logger.info('-----------------Account----------------------')
+  pineapple.app.logger.debug('  account.username            =>  ' + account.username.yellow)
+  pineapple.app.logger.debug('  account.profile.first_name  =>  ' + account.first_name.yellow)
+  pineapple.app.logger.debug('  account.profile.last_name   =>  ' + account.last_name.yellow)
   pineapple.app.logger.info('-------------------------------------------')
 })
 
-module.exports = everybit;
+module.exports = Everybit;
