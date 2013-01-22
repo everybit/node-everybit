@@ -8,9 +8,10 @@ Everybit.Account.retrieve(function(err, account) {
   }
 
   pineapple.app.logger.info('-----------------Account----------------------')
-  pineapple.app.logger.debug('  account.username            =>  ' + account.username.yellow)
-  pineapple.app.logger.debug('  account.profile.first_name  =>  ' + account.first_name.yellow)
-  pineapple.app.logger.debug('  account.profile.last_name   =>  ' + account.last_name.yellow)
+  pineapple.app.logger.debug('  username    =>  ' + account.username.yellow)
+  pineapple.app.logger.debug('  email       =>  ' + account.email.yellow)
+  pineapple.app.logger.debug('  first_name  =>  ' + account.first_name.yellow)
+  pineapple.app.logger.debug('  last_name   =>  ' + account.last_name.yellow)
   pineapple.app.logger.info('-------------------------------------------')
 })
 
