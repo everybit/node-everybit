@@ -5,10 +5,7 @@ Everybit.setApiKey('8e310e7339b960502d1c0ae85c841b80475558e5d0752359fab4aa79');
 
 // Test account
 Everybit.Account.retrieve(function(err, account) {
-  if (err) {
-    throw err;
-    return pineapple.app.logger.error(err.toString());
-  }
+  if (err) throw err;
 
   pineapple.app.logger.info('-----------------Account----------------------')
   pineapple.app.logger.debug('  username    =>  ' + account.username.yellow)
@@ -19,6 +16,7 @@ Everybit.Account.retrieve(function(err, account) {
 });
 
 
+/*
 Everybit.Video.create({
   title       : "Test Video",
   summary     : "Test Summary",
@@ -27,6 +25,12 @@ Everybit.Video.create({
   sourcefile  : 'http://www.moovatom.com/static/clips/big_buck_bunny_clip_1.mov',
   callbackurl : 'http://www.moovatom.com/api/v2/callback-test'
 }, function(err, video){
-  if (err) { throw err; }
+  if (err) throw err;
   console.log(video.toObject())
+});
+*/
+
+Everybit.Video.all(function(err, videos){
+  if (err) throw err;
+  console.log(videos);
 });
