@@ -1,8 +1,8 @@
 {
   "name"    : "everybit",
-  "apikey"  : "ed19b29410b801f2c7d2e7ff49802a6e734987fbce5b7a024c73652a",
+  "apikey"  : "8e310e7339b960502d1c0ae85c841b80475558e5d0752359fab4aa79",
   "type"    : "client",
   "client"  : {
-    "url" : "http://localhost:4000"
+    "url" : "http://staging.api.everybit.co"
   }
 }
