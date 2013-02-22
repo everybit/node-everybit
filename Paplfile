@@ -15,22 +15,23 @@ Everybit.Account.retrieve(function(err, account) {
   pineapple.app.logger.info('-------------------------------------------')
 });
 
-
-
+/*
 Everybit.Video.create({
-  title       : "Test Video",
-  summary     : "Test Summary",
-  tags        : ["test"],
-  visibility  : "public",
-  sourcefile  : 'http://s3.amazonaws.com/ma-dev-file-srv/assets/53/media/7a280e33-4e55-4eb9-9e54-b056d8342aaa/mb_lg.mp4',
-  callbackurl : 'http://staging.api.everybit.co/v1/private/callback?apikey=8e310e7339b960502d1c0ae85c841b80475558e5d0752359fab4aa79'
+  title         : "My Test Video",
+  summary       : "This is a test summary",
+  tags          : ["test", "video"],
+  visibility    : "public",
+  source_url    : 'http://www.moovatom.com/static/clips/big_buck_bunny_clip_1.mov',
+  callback_url  : 'http://staging.api.everybit.co/v1/private/callback?apikey=8e310e7339b960502d1c0ae85c841b80475558e5d0752359fab4aa79'
 }, function(err, video){
   if (err) throw err;
   console.log(video.toObject())
 });
 
 
+
 Everybit.Video.all(function(err, videos){
   if (err) throw err;
   console.log(videos);
 });
+*/
