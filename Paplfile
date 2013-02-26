@@ -1,13 +1,17 @@
 module.exports = require('./lib/everybit/everybit');
-
+/*
+  everybit = require('./node-everybit');
+  everybit.setApiKey('6b191fc59394f2f252dae8717660fa9e199f9161320a6dbf210e1be5');
+  everybit.Account.retrieve(function(e, account){ if (e) throw; console.log(account); });
+*/
 // Set API key
-Everybit.setApiKey('6b191fc59394f2f252dae8717660fa9e199f9161320a6dbf210e1be5'); // staging
+//Everybit.setApiKey('6b191fc59394f2f252dae8717660fa9e199f9161320a6dbf210e1be5'); // staging
 //Everybit.setApiUrl('http://staging.api.everybit.co') // staging
 //Everybit.setApiKey('ed19b29410b801f2c7d2e7ff49802a6e734987fbce5b7a024c73652a'); // local
 //Everybit.setApiUrl('http://localhost:4000');
 
 // Test account
-
+/*
 Everybit.Account.retrieve(function(err, account) {
   if (err) throw err;
 
@@ -26,7 +30,7 @@ Everybit.Account.retrieve(function(err, account) {
     callback_url  : 'http://staging.api.everybit.co/v1/private/callback?apikey=6b191fc59394f2f252dae8717660fa9e199f9161320a6dbf210e1be5'
   }, function(err, video){
     if (err) throw err;
-    
+
     Everybit.Video.all(function(err, videos){
       if (err) throw err;
       console.log(videos);
@@ -34,3 +38,4 @@ Everybit.Account.retrieve(function(err, account) {
   });
 
 });
+*/
