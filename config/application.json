@@ -1,8 +1,0 @@
-{
-  "name"    : "node-everybit",
-  "apikey"  : "8e310e7339b960502d1c0ae85c841b80475558e5d0752359fab4aa79",
-  "type"    : "client",
-  "client"  : {
-    "url" : "http://staging.api.everybit.co"
-  }
-}
